@@ -4,3 +4,16 @@
 
 SELECT COUNT(*) - COUNT(DISTINCT CITY) AS difference
 FROM STATION;
+
+
+/*
+COUNT(*): Menghitung jumlah total semua baris dalam tabel STATION, termasuk duplikat.
+
+COUNT(DISTINCT CITY): Menghitung jumlah kota yang berbeda (unik) berdasarkan nama kota (CITY), tanpa menghitung duplikat
+.
+Pengurangan: 
+Hasil dari COUNT(*) dikurangi dengan hasil dari COUNT(DISTINCT CITY) untuk mendapatkan jumlah kota yang memiliki nama yang sama (duplikasi).
+
+AS difference:
+Memberikan alias difference pada hasil pengurangannya untuk mempermudah interpretasi.
+*/
